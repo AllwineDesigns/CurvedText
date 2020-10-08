@@ -308,7 +308,7 @@ class App extends Component {
       warpedPathStrings,
       pathStrings
     } = this.state;
-    const svg = <svg width={Math.round(width/96*1000000)/1000000 + "in"} height={Math.round(height/96*1000000)/1000000 + "in"} viewBox={"0 0 " + width + " " + height}>
+    const svg = <svg width={Math.round(width/96*1000000)/1000000 + "in"} height={Math.round(height/96*1000000)/1000000 + "in"} viewBox={"0 0 " + width + " " + height} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         { doWarp ?
           warpedPathStrings.map((str,i) =>
           <g key={i}>
