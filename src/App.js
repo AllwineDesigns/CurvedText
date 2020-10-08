@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    textToSVG.load('/Times New Roman.ttf', (err, t) => {
+    textToSVG.load('./Times New Roman.ttf', (err, t) => {
       this.textToSVG = t;
       this.updatePathData();
     });
